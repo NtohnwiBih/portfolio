@@ -1,4 +1,4 @@
-User-agent: *
-Allow: /
+   User-agent: *
+   Allow: /
 
-Sitemap: https://ntohnwibih.com/sitemap.xml
+   Sitemap: https://www.ntohnwibih.com/sitemap.xml

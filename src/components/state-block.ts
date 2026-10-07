@@ -3,8 +3,17 @@ import React from "react";
 export function LoadingState() {
   return React.createElement(
     "div",
-    { className: "flex min-h-[50vh] items-center justify-center px-4" },
-    React.createElement("p", { className: "text-sm text-muted-foreground" }, "Loading…")
+    {
+      className: "flex min-h-[50vh] items-center justify-center px-4",
+      role: "status",
+      "aria-live": "polite",
+    },
+    React.createElement("div", {
+      className:
+        "h-8 w-8 animate-spin rounded-full border-4 border-muted border-t-primary",
+      "aria-hidden": "true",
+    }),
+    React.createElement("span", { className: "sr-only" }, "Loading…")
   );
 }
 
